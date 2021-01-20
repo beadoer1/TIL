@@ -11,7 +11,7 @@ int main(void){
     int sale;
     int sales;
 
-    while(0==0){
+    while(1){
         printf("이번 주문의 주문수량을 입력해주세요.(종료:0)> ");
         scanf("%i",&order);
         if(order > 0){
