@@ -18,5 +18,5 @@ def binary_search(list,item):
 
 my_list = [1, 3, 5, 7, 8]
 
-print(binary_search(my_list,6))
+print(binary_search(my_list,6)) # 
 print(binary_search(my_list,7))

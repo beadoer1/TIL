@@ -16,7 +16,7 @@ public class binary_search {
 			int mid = (low + high)/2;			
 
 			if(arr[mid] == num) {
-				System.out.println(num + "이(가) list에 존재 합니다.");
+				System.out.println(num + "이(가) index " + mid +" 에 존재 합니다.");
 				break;
 			} else if(num > arr[mid]) {
 				low = mid + 1;
