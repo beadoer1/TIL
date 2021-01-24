@@ -5,13 +5,13 @@ public class selection_sort {
 		public static void main(String[] args) {
 			
 			int[] arr = {2,1,3,4,10};
-			
+						
 			int[] newArr = selectionSort(arr);
 			
 			System.out.println(Arrays.toString(newArr));
 			
 		}
-		
+
 		static int[] selectionSort(int[] arr) {
 
 			for(int i = 0; i < arr.length; i++) {
