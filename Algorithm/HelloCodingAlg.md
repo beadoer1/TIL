@@ -6,6 +6,8 @@
 
 [Ch1. 알고리즘의 소개](#Ch1-알고리즘의-소개)  
 [Ch2. 선택 정렬](#Ch2-선택-정렬)  
+[Ch3. 재귀](#Ch3-재귀)  
+[Ch4. 퀵 정렬 'Quich Sort'](#Ch4-퀵-정렬-Quick-Sort)
 
 ### **Ch1. 알고리즘의 소개**
 
@@ -115,11 +117,11 @@ public class binary_search {
 	- 특정 원소를 찾기 위해서는 이전 원소들을 모두 따라가봐야 함
 - 배열과 리스트에서 읽기와 쓰기 연산을 하는데 걸리는 실행 시간
 
-| 구분  | 배열  | 리스트|
-| ----- + ----- + ----- |
-| 읽기  | O(1)  | O(n)  |
-| 쓰기  | O(n)  | O(1)  |
-| 삭제  | O(n)  | O(1)  |
+| 구분  | 배열  | 리스트|  
+| ----- + ----- + ----- |  
+| 읽기  | O(1)  | O(n)  |  
+| 쓰기  | O(n)  | O(1)  |  
+| 삭제  | O(n)  | O(1)  |  
 <br/>
 ※ 실 사용에서는 임의 접근하여 Data를 읽는 경우가 많아 배열을 주로 사용한다.  
 
@@ -151,7 +153,126 @@ print(selectionSort([6,9,1,4,7,2])) # [1, 2, 4, 6, 7, 9]
 ```
 ```
 // with java
+import java.util.Arrays;
+
+public class selection_sort {
+	public static void main(String[] args) {
+		
+		int[] arr = {2,1,3,4,10};
+					
+		int[] newArr = selectionSort(arr);
+		
+		System.out.println(Arrays.toString(newArr));
+	}
+
+	static int[] selectionSort(int[] arr) {
+		for(int i = 0; i < arr.length; i++) {
+			int smallest = arr[i]; // smallest = 2
+			int smallestIndex = i; // i = 0
+			
+			// 배열 중 가장 작은 값을 골라냄
+			for(int j = i; j < arr.length; j++) {
+				if(smallest > arr[j]) {
+					smallest = arr[j];
+					smallestIndex = j;
+				}
+			}
+			
+			// 골라낸 가장 작은 값과 배열의 첫 원소와의 자리를 바꿈
+			int tmp = arr[smallestIndex];
+			arr[smallestIndex] = arr[i];
+			arr[i] = tmp;
+		}
+		return arr;
+	}
+}
 
 ```
+
+### **Ch3. 재귀(Recursion)**
+**재귀**
+- 함수가 자기 자신을 호출하는 것
+- 모든 재귀 함수는 기본 단계(base case)와 재귀 단계(recursive case)라는 두 부분으로 나뉜다.
+	- 기본 단계(base case) : 언제 재귀를 멈출지 알려주는 단계
+	- 재귀 단계(recursive case) : 재귀를 진행하는 단계
+
+```
+# countdown 예제 with python
+def countdown(i)
+	print i 
+	if i <= 1: # 기본 단계
+		return
+	else: # 재귀 단계
+		countdown(i-1)
+
+countdown(5)
+```
+```
+// countdown 예제 with java
+public class recursion1 {
+	public static void main(String[] args) {
+		recursion(5);	
+	}
+
+	static void recursion(int i) {
+		System.out.println(i);
+		if(i <= 1) { // 기본 단계
+			return;
+		} else { // 재귀 단계
+			recursion(i-1);
+		}
+	}
+}
+```
+
+**호출 스택(Stack)**
+- 여러 개의 함수를 호출 하면서 함수에 사용되는 변수를 저장하는 스택
+- 함수 호출을 할 때마다 호출 스택이 메모리를 사용하게 되어 메모리 소비가 큼
+- 재귀를 통한 스택사용에 따른 메모리 부족 시 해결 방안
+	- 재귀 대신 반복문을 사용
+	- 꼬리 재귀(tail recursion) 사용
+```
+# factorial 예제 with python
+def fact(x):
+	if x == 1:
+		return 1
+	else:
+		return x * fact(x-1)
+print(fact(3))
+```
+```
+// factorial 예제 with java
+public class factorial {
+	public static void main(String[] args) {
+		int result = fact(3);
+		System.out.println(result);
+	}
+	static int fact(int x) {
+		if(x == 1) {
+			return 1;
+		} else {
+			return x * fact(x-1);
+		}
+	}
+}
+```
+
+### **Ch4. 퀵 정렬 'Quick Sort'**
+**분할 정복(divide and conquer)**
+- 재귀적 알고리즘 중 하나
+- 분할 정복 전략의 두 가지 단계
+	- 기본 단계를 해결(가능한 한 간단한 문제여야 함)
+	- 문제가 기본 단계가 될 때까지 나누거나 작게 만듬  
+
+**※ 함수형 프로그래밍(functional programming)**
+- 하스켈(Haskell)과 같은 함수형 프로그래밍 언어에는 반복문이란 것이 없다.
+- 하여 무조건 재귀를 사용해야만 하는 경우가 발생하곤 함
+
+**퀵 정렬**
+- 정렬 알고리즘의 하나
+- 선택 정렬보다 훨씬 바르고 실제로 자주 사용됨
+- 분할 정복 전략을 통해 구현
+	- 기본 단계 : 비어있는 배열 or 원소가 하나인 배열
+	- 
 
 
