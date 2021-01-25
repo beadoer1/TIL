@@ -7,7 +7,7 @@
 [Ch1. 알고리즘의 소개](#Ch1-알고리즘의-소개)  
 [Ch2. 선택 정렬](#Ch2-선택-정렬)  
 [Ch3. 재귀](#Ch3-재귀)  
-[Ch4. 퀵 정렬 'Quich Sort'](#Ch4-퀵-정렬-Quick-Sort)
+[Ch4. 퀵 정렬 'Quick Sort'](#Ch4-퀵-정렬-Quick-Sort)
 
 ### **Ch1. 알고리즘의 소개**
 

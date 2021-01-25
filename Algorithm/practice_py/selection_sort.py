@@ -17,5 +17,5 @@ def selectionSort(arr):
         newArr.append(arr.pop(smallest))
     return newArr
 
-print(selectionSort([6,9,1,4,7,2]))
+print(selectionSort([6,9,1,4,7,2])) # [1, 2, 4, 6, 7, 9]
 
