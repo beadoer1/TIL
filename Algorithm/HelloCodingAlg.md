@@ -273,6 +273,69 @@ public class factorial {
 - 선택 정렬보다 훨씬 바르고 실제로 자주 사용됨
 - 분할 정복 전략을 통해 구현
 	- 기본 단계 : 비어있는 배열 or 원소가 하나인 배열
-	- 
+	- 문제 나누기 : 배열을 임의의 수보다 작은 배열과 큰 배열로 나눈다.
+- 문제 나누기 순서
+	- 기준 원소를 고른다.
+	- 배열을 기준 원소보다 작은 원소의 배열과 기준 원소보다 큰 원소의 배열로 나눈다.
+	- 하위 배열에 대해 재귀적으로 퀵 정렬을 호출한다.
 
+```
+# 퀵 정렬 with python
+def quicksort(array):
+    if len(array) < 2:
+        return array
+    else:
+        pivot = array[0]
+        
+        less = [i for i in array[1:] if i < pivot]
+        
+        greater = [i for i in array[1:] if i > pivot]
 
+        return quicksort(less) + [pivot] + quicksort(greater)
+
+arr = [3,9,1,7,6,2,4,5,8]
+newArr = quicksort(arr)
+print(newArr) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+```
+// 퀵 정렬 with java
+import java.util.Arrays;
+
+public class quick_sort {
+	public static void main(String[] args) {
+		
+		int[] arr1 = {7,6,4,5,1,2,3,9,8};
+		int[] newArr = quickSort(arr1);
+		System.out.println(Arrays.toString(newArr));
+		
+	}
+
+	static int[] quickSort(int[] arr) {
+		int pivot = arr[0];
+		int[] less = new int[arr.length];
+		int[] greater = new int[arr.length];
+		if(arr.length < 2) {
+			return arr;
+		} else { // 배열 자체에서 왔다갔다 할 수 있는 방법도 있을 거 같은데..
+			for(int i = 1, j = 0, k = 0; i < arr.length; i++) {
+				if(arr[i] < pivot) {
+					less[j] = arr[i];
+					j++;
+				} else {
+					greater[k] = arr[i];
+					k++;
+				}
+			}
+		}
+		return quickSort(less) + pivot + quickSort(greater); // 배열 합치는 방법을 알아야 한다.
+ 	}
+```
+
+**빅오 표기법 2**
+- 빅오 표기법이 같은 알고리즘의 경우 알고리즘의 각 단계를 수행하는 시간 상수 c(constant)를 따져줘야 함
+- 병합 정렬과 퀵 정렬 비교
+	- 병합 정렬은 O(n log n) 의 빅오를 가짐
+	- 퀵 정렬의 경우 평균적으로 O(n log n)의 빅오를 가지나 최악의 경우 O(n^2)를 나타냄
+	- But, 한 번의 단계를 수행하는 시간 관점에서 퀵 정렬이 병합 정렬보다 빠름(c(quick) < c(merge))
+	- 따라서 일반적으로 퀵 정렬이 병합 정렬보다 빠름
+- 
