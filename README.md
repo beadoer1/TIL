@@ -8,11 +8,12 @@
 ### **CS50**
 - [BoostCourse(CS50 강의 활용)](CS50/cs50.md)
 
+### **CPU**
+- [만화로 배우는 CPU_Michio Shibuya](CPU/cpu.md)
+
 ### **OS(운영체제)**
 - [운영체제(강의)+운영체제와 정보기술의 원리(책)_반효경](OS/OS.md) 
 
-### **CPU**
-- [만화로 배우는 CPU_Michio Shibuya](CPU/cpu.md)
 
 ### **자료구조와 알고리즘**
 - [Hello Coding 그림으로 개념을 이해하는 알고리즘_아디트야 바르가바](Algorithm/HelloCodingAlg.md)
@@ -24,6 +25,8 @@
 ### **Java**
 - [자바의 정석_남궁성](Java/자바의정석_남궁성.md)
 
+### **Database**
+- [SQL 첫걸음](Database/SQL첫걸음.md)
 
 ----
 
