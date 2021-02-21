@@ -33,10 +33,13 @@
 
 ## Tool
 
+### **Terminal**
+- [Terminal 사용법 정리](Tool/terminal.md)
+
 ### **vim**
-- [vim 사용법 정리](vim/vimtutorial.md)
+- [vim 사용법 정리](Tool/vimtutorial.md)
 
 ### **Markdown Language**
-- [Markdown 사용법 정리](markdown/markdown.md)
+- [Markdown 사용법 정리](Tool/markdown.md)
 
 
