@@ -26,8 +26,16 @@
 - [자바의 정석1_남궁성](Java/자바의정석1/자바의정석_남궁성.md)
 - [자바의 정석2_남궁성](Java/자바의정석2/자바의정석_남궁성.md)
 
+### **Python**
+- 
+
 ### **Database**
 - [SQL 첫걸음](Database/SQL첫걸음.md)
+
+### **Html, css, javascript**
+-
+-
+-
 
 ----
 
