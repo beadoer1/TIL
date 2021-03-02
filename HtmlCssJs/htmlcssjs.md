@@ -2,7 +2,7 @@
 **HTML, CSS, Javascript 에 대해 정리합니다.**
 
 [HTML](#HTML-Hypertext-Markup-Language)  
-[CSS](#CSS-Cascading Style-Sheets)   
+[CSS](#CSS-Cascading-Style-Sheets)   
 [Javascript](#Javascript)  
 
 
@@ -104,7 +104,7 @@
 - 간격(여백) 관련
 	- margin : 내용물과 바깥 공간 사이의 여백을 지정한다.(외부여백)
 		- 'margin : auto'를 사용해 화면을 가운데로 가져올 수 있다.
-	- padding : 내용물 내부의 여백을 지정한다.(내부여백)
+	- padding : 내용물 내부의 여백을 지정한다.(내부여백)  
 ![marginpadding](marginpadding.png)  
 
 **CSS Tips**
@@ -123,6 +123,7 @@ font-family: 'Nanum Gothic', sans-serif;
 - 부트스트랩(bootstrap), 예쁜 CSS 모음집
 	- 부트스트랩 컴포넌트 : [https://getbootstrap.com/docs/4.0/components/alerts/](https://getbootstrap.com/docs/4.0/components/alerts/)
 ```
+// 부트스트랩 시작 템플릿
 <!doctype html> 
 <html lang="en">
 <head>
