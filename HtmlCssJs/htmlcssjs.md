@@ -1,12 +1,12 @@
 # **HTML, CSS, Javascript**
-**HTML, CSS, Javascript 에 대해 정리합니다.**
+### **HTML, CSS, Javascript 에 대해 정리합니다.**
 
 [HTML](#HTML-Hypertext-Markup-Language)  
 [CSS](#CSS-Cascading-Style-Sheets)   
 [Javascript](#Javascript)  
 
 
-### **HTML - Hypertext Markup Language **
+### **HTML - Hypertext Markup Language**
 **HTML은 뼈대, CSS는 꾸미기**
 - HTML 은 구역과 텍스트를 나타내는 코드, CSS는 잡은 구역을 꾸며주는 코드이다.
 - 기존에는 HTML 내 style 속성으로 꾸미기를 할 수 있었지만, 긴 세월 방대한 양을 모아 CSS 파일이 탄생하게 되었다.
@@ -58,7 +58,7 @@
 ```
 
 
-### **CSS - Cascading Style Sheets**
+### **CSS 'Cascading Style Sheets'**
 **HTML의 부모자식 구조**
 - HTML tag 들은 부모자식 구조를 가지며, 부모 tag에 적용된 CSS는 자식 tag에도 적용된다.
 ![HTML부모자식구조](HTML부모자식구조.png)  
