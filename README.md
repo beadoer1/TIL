@@ -30,7 +30,7 @@
 - [자바의 정석2_남궁성](Java/자바의정석2/자바의정석_남궁성.md)
 
 ### **Python**
-- 
+- [Python 기초 정리](Python/python.py) 
 
 ### **Database**
 - [SQL 첫걸음](Database/SQL첫걸음.md)
@@ -53,3 +53,6 @@
 ### **Markdown Language**
 - [Markdown 사용법 정리](Tool/markdown.md)
 
+### **git, github**
+- [git, github 정리](Tool/git.md)
+- [git 순서에 따른 정리(생성부터 순서대로)](https://github.com/beadoer1/gitprac)
