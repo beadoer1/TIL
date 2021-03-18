@@ -14,10 +14,6 @@
 ### **OS(운영체제)**
 - [운영체제(강의)+운영체제와 정보기술의 원리(책)_반효경](OS/OS.md) 
 
-
-### **자료구조와 알고리즘**
-- [Hello Coding 그림으로 개념을 이해하는 알고리즘_아디트야 바르가바](Algorithm/HelloCodingAlg.md)
-
 ### **보안**
 - [쿠키/세션, JWT 인증 방식](security/쿠키세션JWT.md)  
 
@@ -37,8 +33,24 @@
 
 ### **Html, css, javascript**
 - [html, CSS, Javascript](HtmlCssJs/htmlcssjs.md)
--
--
+
+----
+
+## 자료구조, 알고리즘
+- [알고리즘 풀이 모아둔 곳](https://github.com/beadoer1/algorithm)
+
+### **자료구조와 알고리즘 책, 강의 정리**
+- [Hello Coding 그림으로 개념을 이해하는 알고리즘_아디트야 바르가바](Algorithm/book_lecture/HelloCodingAlg.md)
+
+### **자료구조**
+- [트리(tree)](Algorithm/tree.md)
+
+### **알고리즘**
+- []
+- [동적계획법(Dinamic Programming)](Algorithm/dinamic_programming.md)
+- [DFS(Depth First Search) 와 BFS(Breadth First Search)](Algorithm/DFS_BFS.md)
+- [분할정복]
+
 
 ----
 
