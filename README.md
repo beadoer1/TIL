@@ -22,8 +22,12 @@
 ## Programming
 
 ### **Java**
+#### Java 
 - [자바의 정석1_남궁성](Java/자바의정석1/자바의정석_남궁성.md)
 - [자바의 정석2_남궁성](Java/자바의정석2/자바의정석_남궁성.md)
+- [좋은 객체 지향 설계의 5가지 원칙(SOLID)](Java/Spring/SOLID.md)
+#### Spring
+- [IoC(Inversion of Control)와 DI(Dependency Injection), 컨테이너](Java/Spring/IoC_DI.md)
 
 ### **Python**
 - [Python 기초 정리](Python/python.py) 
