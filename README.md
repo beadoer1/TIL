@@ -28,6 +28,7 @@
 - [좋은 객체 지향 설계의 5가지 원칙(SOLID)](Java/Spring/SOLID.md)
 #### Spring
 - [IoC(Inversion of Control)와 DI(Dependency Injection), 컨테이너](Java/Spring/IoC_DI.md)
+- [스프링 컨테이너와 스프링 빈](Java/Spring/container_bean.md)
 
 ### **Python**
 - [Python 기초 정리](Python/python.py) 
@@ -62,13 +63,14 @@
 
 ### **Terminal**
 - [Terminal 사용법 정리](Tool/terminal.md)
-
+- [포트포워딩(PortFowarding)](Tool/portfowarding.md)
+  
 ### **vim**
 - [vim 사용법 정리](Tool/vimtutorial.md)
-
+  
 ### **Markdown Language**
 - [Markdown 사용법 정리](Tool/markdown.md)
-
+  
 ### **git, github**
 - [git, github 정리](Tool/git.md)
 - [git 순서에 따른 정리(생성부터 순서대로)](https://github.com/beadoer1/gitprac)
