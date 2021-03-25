@@ -5,18 +5,18 @@
 
 ### 문제 : 서버에서 jar 파일을 돌릴 시 시간이 다르게 작동한다.
 - EC2서버에서 실행할 때와 로컬서버에서 실행할 때의 시간이 다르다.
-1. 서버 실행(약 9시간 빠르다.)  
+1. EC2 linux 서버 실행(약 9시간 빠르다.)  
 ![서버실행](서버실행.png)  
-2. 로컬 실행(한 시간 정도 뒤에 글쓰려고 찍은거라 10시간 차이가 난다^^;)
+2. 로컬 서버 실행(한 시간 정도 뒤에 글쓰려고 찍은거라 10시간 차이가 난다^^;)
 ![로컬실행](로컬실행.png)  
 
 ### 들어가기 전에..
 - 이것저것 찾아보다 알게된 배경지식이다. 해당 문제를 해결하기 위해 필요한 지식이라 적어놓았다.
-- JDK 1.8 부터 java.time 패키지가 추가되었다고 한다. 사실 이전에 쓰이던 Calendar, Date 클래스와의 명확한 차이까지는 모르겠고, 더 좋은 패키지라고 한다. 해서, 앞으로는 java.time 패키지를 사용할 것이라는 점과 이전부터 계속 사용되고 있던 Calendar, Date 로 변환이 가능하다는 점만 알아두고 넘어가겠다.
-- Java의 java.time 패키지는 해당 컴퓨터에 저장된 timezone을 읽어 시간을 반환한다.
+- JDK 1.8 부터 java.time 패키지가 추가되었다고 한다. 사실 이전부터 쓰였다는 Calendar, Date 클래스와의 명확한 차이까지는 모르겠고, 더 좋은 패키지라고 한다. 해서, 앞으로는 java.time 패키지를 사용할 것이라는 점과 이전부터 계속 사용되고 있던 Calendar, Date 로 변환이 가능하다는 점만 알아두고 넘어가겠다.
+- Java의 `java.time 패키지`의 `LocalDateTime 클래스`는 파일이 돌아가는 컴퓨터에 저장된 `timezone`을 읽어 현재시간을 반환한다.
 
 ### ubuntu로 timezone 확인하기
-- 아마도 내 timezone이 한국으로 안되어있는 것 같다. timezone을 확인해보자.
+- 아마도 내 EC2 서버의 timezone이 한국으로 안되어있는 것 같다. timezone을 확인해보자.
 
 1. `timedatectl` 명령어 사용하기  
   
@@ -62,7 +62,7 @@ lrwxrwxrwx 1 root root 30 Mar 25 13:42 /etc/localtime -> /usr/share/zoneinfo/Asi
 
 ### ubuntu로 timezone 변경하기
 1. `sudo dpkg-reconfigure tzdata` 로 timezone 데이터를 변경하기
-    - 이거 좀 신기하다. linux 내장 패키지 같은데 아래와 같은 화면에서 대륙과 도시를 선택해 /etc/timezone 정보를 변경할 수 있다.
+    - 이거 좀 신기하다.. linux 내장 패키지 같은데 아래와 같은 화면에서 대륙과 도시를 선택해 /etc/timezone 정보를 변경할 수 있다.
 ![dpkg1](dpkg1.png)  
 
 2. `sudo timedatectl set-timezone your_time_zone` 을 통해 변경하기
