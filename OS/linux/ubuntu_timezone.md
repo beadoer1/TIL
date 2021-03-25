@@ -19,6 +19,7 @@
 - 아마도 내 timezone이 한국으로 안되어있는 것 같다. timezone을 확인해보자.
 
 1. `timedatectl` 명령어 사용하기  
+  
 **입력**  
 ```
 ubuntu@ip-000:~$ timedatectl
@@ -34,7 +35,8 @@ systemd-timesyncd.service active: yes
                  RTC in local TZ: no
 ```
 
-2. `cat /etc/timezone` 명령어 사용하기
+2. `cat /etc/timezone` 명령어 사용하기  
+  
 **입력**  
 ```
 ubuntu@ip-000:~$ cat /etc/timezone
@@ -44,7 +46,8 @@ ubuntu@ip-000:~$ cat /etc/timezone
 Etc/UTC
 ```
 
-3. `ls -l /etc/localtime` 명령어 사용하기
+3. `ls -l /etc/localtime` 명령어 사용하기  
+  
 **입력**  
 ```
 ubuntu@ip-000:~$ ls -l /etc/localtime
@@ -64,7 +67,8 @@ lrwxrwxrwx 1 root root 30 Mar 25 13:42 /etc/localtime -> /usr/share/zoneinfo/Asi
 
 2. `sudo timedatectl set-timezone your_time_zone` 을 통해 변경하기
     - 위에서 `timedatectl`로 볼 수 있었던 정보들을 수정하는 방법이다.
-    - 이 방법으로는 /etc/timezone 은 바꿀 수는 없었다.
+    - 이 방법으로는 /etc/timezone 은 바꿀 수는 없었다.  
+  
 **입력**  
 ```
 sudo timedatectl set-timezone Africa/Lagos
@@ -82,7 +86,7 @@ systemd-timesyncd.service active: yes
 
 ### 결론
 - AWS에서 제공하는 linux 서버에는 2가지 파일 형태(`timedatectl`와 `/etc/timezone`로 확인할 수 있는) timezone이 존재한다.
-- java.time 패키지는 `/etc/timezone`의 timezone을 읽어 now() 메서드의 반환값을 만든다.
+- java.time 패키지 안에 `LocalDateTime`클래스는 `/etc/timezone`의 `timezone`을 읽어 `now()` 메서드의 반환값을 만든다.
 - 위 1번 방법의 영향으로 jar 파일 실행 시 timezone을 제대로 인식함을 볼 수 있었다.
 ![서버실행결론](서버실행결론.png)  
 - 추가로, ubuntu로 시간 조정을 하는 것 외에 java 파일에 timezone을 주입하는 방법이 따로 있는데, 이는 별도로 정리해보자.
