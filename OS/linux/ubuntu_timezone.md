@@ -84,7 +84,7 @@ systemd-timesyncd.service active: yes
 - java.time 패키지 안에 `LocalDateTime`클래스는 `/etc/timezone`의 `timezone`을 읽어 `now()` 메서드의 반환값을 만든다.
 - 위 1번 방법의 영향으로 jar 파일 실행 시 timezone을 제대로 인식함을 볼 수 있었다.
 ![서버실행결론](서버실행결론.png)  
-- 추가로, ubuntu로 시간 조정을 하는 것 외에 java 파일에 timezone을 주입하는 방법이 따로 있는데, 이는 [별도로 정리](Java/Spring/timezone_injection.md)해보자.
+- 추가로, ubuntu로 시간 조정을 하는 것 외에 java 파일에 timezone을 주입하는 방법이 따로 있는데, 이는 [별도로 정리](https://github.com/beadoer1/TIL/blob/main/Java/Spring/timezone_injection.md)해보자.
 
 ### 의문..
 - 그럼 내 EC2서버에 local time 시간 설정은 언제된거지??

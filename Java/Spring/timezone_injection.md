@@ -1,6 +1,6 @@
 ## 자바 파일에 timezone 주입하기
 Java Spring을 통해 구현한 CRUD 게시판이 EC2서버에서 글을 작성할 때와 로컬서버에서 작성할 때의 작성시간이 다르다..  
-해당 글은 [ubuntu 에서 timezone 확인/수정하기](OS/linux/ubuntu_timezone.md)의 연장선으로, timezone을 java 파일에 주입하는 방법에 대해 적어보려 한다.  
+해당 글은 [ubuntu 에서 timezone 확인/수정하기](https://github.com/beadoer1/TIL/blob/main/OS/linux/ubuntu_timezone.md)의 연장선으로, timezone을 java 파일에 주입하는 방법에 대해 적어보려 한다.  
 
 ### 실행 명령어를 통한 방법
 - 보통 `.jar` 파일을 실행하는 명령어는 아래와 같은데,
