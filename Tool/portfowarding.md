@@ -4,6 +4,12 @@
 간략 명령어들과 현상을 남겨본다.  
 ※ 이 내용은 항해99 크루인 고성빈님의 [블로그 글](https://seongbindb.tistory.com/128)을 참고하였다.  
   
+#### 포트포워딩 등록
+**입력 명령어**
+```
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+```
+
 #### 현재 포워딩 되어있는 포트들을 확인.(과거 이력까지)  
 **입력 명령어**  
 ```
@@ -32,3 +38,4 @@ REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:http redir
 REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:http redir ports 8080
 REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:http redir ports 8080
 ```
+
