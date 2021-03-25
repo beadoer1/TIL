@@ -10,7 +10,7 @@
 ### 2. 그 외 용어
 - 유방향 그래프(Directed Graph) : 방향이 있는 간선을 갖는 그래프. 간선은 단방향 관계를 나타내며, 각 간선은 한 방향으로만 진행한다.
 - 무방향 그래프(Undirected Graph) : 방향이 없는 간선을 갖는 그래프.  
-![graph](images/graph.png)  
+![graph](graph.png)  
 ※ 그림 출처 : spartacodingclub - 알고보면 알기쉬운 알고리즘 강의자료  
   
 ### 3. 그래프의 표현 방법
@@ -18,11 +18,9 @@
 인접 행렬로 그래프를 표현하는 경우, 즉각적으로 노드 간 연결상태를 바로 알 수 있다. 그러나, 모든 조합의 연결 여부를 저장해야 되기 때문에 O(node^2) 만큼의 공간을 사용해야 한다.  
 - 인접 리스트(Adjacnecy List) 표현 : 링크드 리스트로 그래프의 연결 관계를 표현  
 인접 리스트로 그래프를 표현하는 경우, 즉각적으로 연결되었는지는 알 수 없고, 각 리스트를 돌아봐야 한다. 따라서 연결되었는지 여부를 알기 위해서 최대 O(node) 만큼의 시간을 사용해야 한다. 대신 모든 조합의 연결 여부를 저장할 필요가 없으니  O(노드 + 간선) 만큼의 공간을 사용하면 된다.
-![graph_expression](images/graph_expression.png)  
+![graph_expression](graph_expression.png)  
 ※ 그림 출처 : spartacodingclub - 알고보면 알기쉬운 알고리즘 강의자료  
   
 
-
-  
 - 참고 자료
     1. 강의자료 - spartacodingclub(알고보면 알기쉬운 알고리즘)

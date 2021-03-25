@@ -1,7 +1,7 @@
 ## DFS(Depth First Search)와 BFS(Breadth First Search)
 DFS와 BFS는 **맹목적 탐색(blind search)**방법의 일부들로 맹목적 탐색은 이미 정해진 순서에 따라 상태 공간 그래프(문제 해결 과정에서 나타나는 각 국면을 데이터화)를 **점차 형성해 가면서** 해를 탐색하는 방법을 말한다.  
   
-![DFS와BFS](Algorithm/images/dfs_bfs.gif)  
+![DFS와BFS](dfs_bfs.gif)  
 ※ 그림 출처 : spartacodingclub - 알고보면 알기쉬운 알고리즘 강의자료  
   
 ### DFS(깊이 우선 탐색_Depth First Search)
