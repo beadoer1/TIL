@@ -58,6 +58,11 @@
 - [분할정복(Divide and conquer algorithm)]()  
   
 ----
+## OS
+
+### linux
+- [ubuntu 에서 timezone 확인/수정하기](OS/linux/ubuntu_timezone.md)
+----
   
 ## Tool
 
