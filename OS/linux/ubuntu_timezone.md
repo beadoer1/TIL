@@ -1,7 +1,6 @@
 ## ubuntu 에서 timezone 확인/수정하기
-**항해99 천재승님께서 slack에 질문을 올려주셨다.**  
-**내용은 Java Spring을 통해 구현한 CRUD 게시판이 AWS EC2서버에서 작성할 때와 로컬서버에서 작성할 때가 작성시간이 다르다는 것이었다.**  
-**흥미로운 주제라 알아보고 정리해본다.**  
+**Java Spring을 통해 구현한 CRUD 게시판이 EC2서버에서 글을 작성할 때와 로컬서버에서 작성할 때의 작성시간이 다르다..**  
+**AWS에서 구매하는 서버 관련 흥미로운 주제라 알아보고 정리해본다.**  
 
 ### 문제 : 서버에서 jar 파일을 돌릴 시 시간이 다르게 작동한다.
 - EC2서버에서 실행할 때와 로컬서버에서 실행할 때의 시간이 다르다.
@@ -18,14 +17,13 @@
 ### ubuntu로 timezone 확인하기
 - 아마도 내 EC2 서버의 timezone이 한국으로 안되어있는 것 같다. timezone을 확인해보자.
 
-1. `timedatectl` 명령어 사용하기  
-  
-**입력**  
+1. `timedatectl` 명령어 사용하기
 ```
+// 입력
 ubuntu@ip-000:~$ timedatectl
 ```  
-**출력**  
 ```
+// 출력
                       Local time: Thu 2021-03-25 13:46:10 KST
                   Universal time: Thu 2021-03-25 04:46:10 UTC
                         RTC time: Thu 2021-03-25 04:46:11
@@ -35,25 +33,23 @@ systemd-timesyncd.service active: yes
                  RTC in local TZ: no
 ```
 
-2. `cat /etc/timezone` 명령어 사용하기  
-  
-**입력**  
+2. `cat /etc/timezone` 명령어 사용하기
 ```
+// 입력
 ubuntu@ip-000:~$ cat /etc/timezone
 ```  
-**출력**  
 ```
+// 출력
 Etc/UTC
 ```
 
-3. `ls -l /etc/localtime` 명령어 사용하기  
-  
-**입력**  
+3. `ls -l /etc/localtime` 명령어 사용하기
 ```
+// 입력
 ubuntu@ip-000:~$ ls -l /etc/localtime
 ```  
-**출력**  
 ```
+// 출력
 lrwxrwxrwx 1 root root 30 Mar 25 13:42 /etc/localtime -> /usr/share/zoneinfo/Asia/Seoul
 ```
 
@@ -68,13 +64,12 @@ lrwxrwxrwx 1 root root 30 Mar 25 13:42 /etc/localtime -> /usr/share/zoneinfo/Asi
 2. `sudo timedatectl set-timezone your_time_zone` 을 통해 변경하기
     - 위에서 `timedatectl`로 볼 수 있었던 정보들을 수정하는 방법이다.
     - 이 방법으로는 /etc/timezone 은 바꿀 수는 없었다.  
-  
-**입력**  
 ```
+// 입력
 sudo timedatectl set-timezone Africa/Lagos
 ```  
-**출력**  
-```  
+```
+// 출력  
                       Local time: Thu 2021-03-25 06:25:31 WAT
                   Universal time: Thu 2021-03-25 05:25:31 UTC
                         RTC time: Thu 2021-03-25 05:25:32
