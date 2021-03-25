@@ -30,6 +30,7 @@
 - [IoC(Inversion of Control)와 DI(Dependency Injection), 컨테이너](Java/Spring/IoC_DI.md)
 - [스프링 컨테이너와 스프링 빈](Java/Spring/container_bean.md)
 - [자바 파일에 timezone 주입하기](Java/Spring/timezone_injection.md)
+- [BeanFactory와 ApplicationContext](Java/Spring/BeanFactoryAndApplicationContext.md)
 
 ### **Python**
 - [Python 기초 정리](Python/python.py) 
