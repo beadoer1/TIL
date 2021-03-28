@@ -33,6 +33,7 @@
 - [BeanFactory와 ApplicationContext](Java/Spring/BeanFactoryAndApplicationContext.md)
 - [Spring의 다양한 설정 형식 - 자바 코드, XML 등](Java/Spring/다양한설정형식지원.md)
 - [싱글톤 컨테이너](Java/Spring/singleton.md)
+- [DI(Dependency Injection) vs Singleton](Java/Spring/DIvsSingleton.md)
 - [자바 파일에 timezone 주입하기](Java/Spring/timezone_injection.md)
 
 ### **Python**
