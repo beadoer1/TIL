@@ -1,5 +1,5 @@
 ## BeanFactory와 ApplicationContext
-**해당 내용은 김영한 님의 Inflearn '스프링 핵심 원리 - 기본편' 강의 내용에서 가져왔습니다.(아주 조금 덧댔습니다.^^)**   
+**해당 내용은 김영한 님의 Inflearn '스프링 핵심 원리 - 기본편' 강의 내용에서 가져왔습니다.**   
 **BeanFactory와 ApplicationContext에 대해 알아봅니다.**
 
 ### BeanFactory

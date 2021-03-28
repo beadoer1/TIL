@@ -25,12 +25,15 @@
 #### Java 
 - [자바의 정석1_남궁성](Java/자바의정석1/자바의정석_남궁성.md)
 - [자바의 정석2_남궁성](Java/자바의정석2/자바의정석_남궁성.md)
+- [인프런 - 자바 프로그래밍 입문 강좌 스터디 정리](Java/자바프로그래밍입문/자바프로그래밍입문.md)
 - [좋은 객체 지향 설계의 5가지 원칙(SOLID)](Java/Spring/SOLID.md)
 #### Spring, Spring Boot
 - [IoC(Inversion of Control)와 DI(Dependency Injection), 컨테이너](Java/Spring/IoC_DI.md)
 - [스프링 컨테이너와 스프링 빈](Java/Spring/container_bean.md)
-- [자바 파일에 timezone 주입하기](Java/Spring/timezone_injection.md)
 - [BeanFactory와 ApplicationContext](Java/Spring/BeanFactoryAndApplicationContext.md)
+- [Spring의 다양한 설정 형식 - 자바 코드, XML 등](Java/Spring/다양한설정형식지원.md)
+- [싱글톤 컨테이너](Java/Spring/singleton.md)
+- [자바 파일에 timezone 주입하기](Java/Spring/timezone_injection.md)
 
 ### **Python**
 - [Python 기초 정리](Python/python.py) 
